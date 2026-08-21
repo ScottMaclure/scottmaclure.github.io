@@ -157,7 +157,7 @@ of the Demon Lord PDF Compression &amp; Optimization Report</h1>
 <code>SDL1000_Shadow_of_the_Demon_Lord_Revised-digital_3-21-19.pdf</code><br />
 <strong>Output Document:</strong>
 <code>SDL1000_Shadow_of_the_Demon_Lord_Revised-digital_3-21-19_optimized.pdf</code><br />
-<strong>Date:</strong> August 20, 2025</p>
+<strong>Date:</strong> August 20, 2026</p>
 <hr />
 <h2 id="executive-summary">1. Executive Summary</h2>
 <p>The digital PDF for <em>Shadow of the Demon Lord</em> (Revised
@@ -230,6 +230,13 @@ Annotations</strong></td>
 <td style="text-align: left;">Baseline</td>
 <td style="text-align: left;">32–44 dB</td>
 <td style="text-align: left;">Indistinguishable at 100% zoom</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Total Processing
+Time</strong></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">38m 49s (2,329s)</td>
+<td style="text-align: left;">Full analysis &amp; build</td>
 </tr>
 </tbody>
 </table>
@@ -470,7 +477,49 @@ with no stream syntax errors or missing visual assets.</li>
 </ul></li>
 </ol>
 <hr />
-<h2 id="generated-files">6. Generated Files</h2>
+<h2 id="execution-time-and-performance-breakdown">6. Execution Time and
+Performance Breakdown</h2>
+<p>The entire analysis, benchmarking, and compression workflow took
+<strong>38 minutes and 49 seconds</strong> (2,329 seconds) from start to
+finish.</p>
+<h3 id="time-summary">Time Summary</h3>
+<ul>
+<li><strong>Start Time</strong>: 2026-08-20 12:37:54 UTC (20:37:54 local
+time, UTC+8)</li>
+<li><strong>End Time</strong>: 2026-08-20 13:16:43 UTC (21:16:43 local
+time, UTC+8)</li>
+<li><strong>Total Elapsed Time</strong>: 38 minutes, 49 seconds (2,329
+seconds)</li>
+</ul>
+<h3 id="phase-breakdown">Phase Breakdown</h3>
+<ol type="1">
+<li><strong>Environment Setup</strong> (12:37:54 – 12:38:14 | ~20
+seconds):
+<ul>
+<li>Checked system tools and installed <code>pymupdf</code>,
+<code>pikepdf</code>, and <code>pillow</code>.</li>
+</ul></li>
+<li><strong>PDF Structure Analysis</strong> (12:38:14 – 12:56:41 | ~18
+minutes, 27 seconds):
+<ul>
+<li>Extracted metadata, image xrefs, color spaces, display resolutions,
+and mask structures across all 274 pages.</li>
+</ul></li>
+<li><strong>Compression Benchmarks and Testing</strong> (12:56:41 –
+13:14:16 | ~17 minutes, 35 seconds):
+<ul>
+<li>Evaluated 8 different presets to measure output size against visual
+fidelity (PSNR).</li>
+</ul></li>
+<li><strong>Production Generation and Verification</strong> (13:14:16 –
+13:16:43 | ~2 minutes, 27 seconds):
+<ul>
+<li>Built the final optimized PDF and verified document integrity,
+bookmarks, text layer, and rendering.</li>
+</ul></li>
+</ol>
+<hr />
+<h2 id="generated-files">7. Generated Files</h2>
 <ul>
 <li><strong>Optimized PDF:</strong>
 <code>SDL1000_Shadow_of_the_Demon_Lord_Revised-digital_3-21-19_optimized.pdf</code>
@@ -478,8 +527,10 @@ with no stream syntax errors or missing visual assets.</li>
 <li><strong>Original PDF (Unmodified):</strong>
 <code>SDL1000_Shadow_of_the_Demon_Lord_Revised-digital_3-21-19.pdf</code>
 (169.43 MB)</li>
-<li><strong>Compression Report:</strong>
+<li><strong>Compression Report (Markdown):</strong>
 <code>sotdl-pdf-compression-report.md</code></li>
+<li><strong>Compression Report (HTML):</strong>
+<code>sotdl-pdf-compression-report.html</code></li>
 </ul>
 
 </body>
