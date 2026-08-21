@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shadow of the Demon Lord - PDF Compression &amp; Optimization Report</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --text: #1e293b;
+      --text-light: #64748b;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --border: #e2e8f0;
+      --table-stripe: #f8fafc;
+      --highlight: #059669;
+      --code-bg: #f1f5f9;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    html {
+      background-color: var(--bg);
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.65;
+      color: var(--text);
+      background-color: var(--card-bg);
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 48px 56px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border);
+    }
+    
+    h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #0f172a;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 16px;
+      margin-top: 0;
+      margin-bottom: 20px;
+      line-height: 1.25;
+    }
+    
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin-top: 36px;
+      margin-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+    
+    h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #1e293b;
+      margin-top: 24px;
+      margin-bottom: 12px;
+    }
+    
+    p {
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+    
+    ul, ol {
+      margin-top: 0;
+      margin-bottom: 16px;
+      padding-left: 24px;
+    }
+    
+    li {
+      margin-bottom: 8px;
+    }
+    
+    hr {
+      border: 0;
+      height: 1px;
+      background: var(--border);
+      margin: 32px 0;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      font-size: 0.92rem;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    th, td {
+      padding: 12px 14px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    
+    th {
+      background-color: #f1f5f9;
+      font-weight: 600;
+      color: #334155;
+    }
+    
+    tr:nth-child(even) {
+      background-color: var(--table-stripe);
+    }
+    
+    tr:last-child td {
+      border-bottom: none;
+    }
+    
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.88em;
+      background-color: var(--code-bg);
+      color: #0f172a;
+      padding: 2px 6px;
+      border-radius: 4px;
+      border: 1px solid #e2e8f0;
+    }
+    
+    strong {
+      font-weight: 600;
+      color: #0f172a;
+    }
+    
+    @media (max-width: 768px) {
+      body {
+        padding: 24px 20px;
+        margin: 16px 8px;
+      }
+      table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+    }
+  </style>
+</head>
+<body>
+<h1
+id="shadow-of-the-demon-lord-pdf-compression-optimization-report">Shadow
+of the Demon Lord PDF Compression &amp; Optimization Report</h1>
+<p><strong>Source Document:</strong>
+<code>SDL1000_Shadow_of_the_Demon_Lord_Revised-digital_3-21-19.pdf</code><br />
+<strong>Output Document:</strong>
+<code>SDL1000_Shadow_of_the_Demon_Lord_Revised-digital_3-21-19_optimized.pdf</code><br />
+<strong>Date:</strong> August 20, 2025</p>
+<hr />
+<h2 id="executive-summary">1. Executive Summary</h2>
+<p>The digital PDF for <em>Shadow of the Demon Lord</em> (Revised
+Edition) was 169.43 MB (170 MB on disk) across 274 pages. Through
+low-level PDF stream inspection, image re-compression, metadata pruning,
+and modern object stream compression, the file size was reduced to
+<strong>47.97 MB (a 71.7% reduction / saving 121.46 MB)</strong> while
+preserving high image fidelity, 100% of the vector text and embedded
+fonts, all 352 Table of Contents bookmarks, and all interactive
+hyperlinks.</p>
+<p>The original file was kept intact, and a new optimized file was
+created.</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Metric</th>
+<th style="text-align: left;">Original Document</th>
+<th style="text-align: left;">Optimized Document</th>
+<th style="text-align: left;">Delta</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>File Size</strong></td>
+<td style="text-align: left;"><strong>169.43 MB</strong></td>
+<td style="text-align: left;"><strong>47.97 MB</strong></td>
+<td style="text-align: left;"><strong>-121.46 MB (-71.7%)</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Page Count</strong></td>
+<td style="text-align: left;">274</td>
+<td style="text-align: left;">274</td>
+<td style="text-align: left;">Preserved (100%)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Bookmarks / TOC
+Entries</strong></td>
+<td style="text-align: left;">352</td>
+<td style="text-align: left;">352</td>
+<td style="text-align: left;">Preserved (100%)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Text Layer Integrity</strong></td>
+<td style="text-align: left;">Original</td>
+<td style="text-align: left;">Verbatim identical</td>
+<td style="text-align: left;">100% Match</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Hyperlinks /
+Annotations</strong></td>
+<td style="text-align: left;">Original</td>
+<td style="text-align: left;">Verbatim identical</td>
+<td style="text-align: left;">100% Match</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Image Resolution</strong></td>
+<td style="text-align: left;">300–440 DPI (print press)</td>
+<td style="text-align: left;">Max 200 DPI (Retina/screen)</td>
+<td style="text-align: left;">Clean 1:1 screen mapping</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Visual Fidelity
+(PSNR)</strong></td>
+<td style="text-align: left;">Baseline</td>
+<td style="text-align: left;">32–44 dB</td>
+<td style="text-align: left;">Indistinguishable at 100% zoom</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="root-cause-analysis">2. Root Cause Analysis</h2>
+<p>Inspection of the internal PDF object hierarchy revealed why the
+original digital PDF was excessively large:</p>
+<ol type="1">
+<li><strong>Lossless <code>FlateDecode</code> Raster Artwork (54.86
+MB)</strong>:
+<ul>
+<li>26 large continuous-tone illustrations and character portraits were
+encoded using lossless <code>FlateDecode</code> (PNG-style deflated
+bitmaps) rather than DCT (JPEG).</li>
+<li>Single illustrations reached up to 5.68 MB individually (e.g., xref
+2456 on page 193).</li>
+</ul></li>
+<li><strong>Excessive Print Resolutions (300 to 440 DPI)</strong>:
+<ul>
+<li>180+ raster assets were exported at 300–440 DPI for commercial print
+press standards.</li>
+<li>For digital reading on 10–13” tablets (e.g., iPad Pro Retina) and
+2K/4K monitors, an 8.5” × 11” page only needs ~200 DPI to achieve 1700 ×
+2200 native screen pixels.</li>
+</ul></li>
+<li><strong>Bloated Adobe Photoshop XMP Metadata (~12 MB)</strong>:
+<ul>
+<li>Dozens of individual image XObjects contained embedded
+<code>/Subtype /XML</code> metadata streams (Photoshop document
+histories, color management logs, and Dublin Core records).</li>
+</ul></li>
+<li><strong>4-Channel CMYK Color Spaces on Digital Artwork</strong>:
+<ul>
+<li>Several large images (including the cover artwork, xref 3338) used
+4-channel <code>DeviceCMYK</code> instead of standard 3-channel
+<code>sRGB</code>, wasting 25% extra data and slowing down real-time
+viewer rendering on RGB displays.</li>
+</ul></li>
+<li><strong>Uncompressed Alpha Masks (<code>SMask</code>)</strong>:
+<ul>
+<li>195 separate 8-bit grayscale soft masks (used for transparent
+cut-out character art) were stored without optimal compression.</li>
+</ul></li>
+<li><strong>Absence of PDF 1.5+ Object Streams</strong>:
+<ul>
+<li>Thousands of indirect object dictionaries, page nodes, and
+cross-reference tables were stored as uncompressed plain-text PDF
+streams.</li>
+</ul></li>
+</ol>
+<hr />
+<h2 id="benchmarks-preset-comparison">3. Benchmarks &amp; Preset
+Comparison</h2>
+<p>Multiple optimization profiles were evaluated to measure the size
+vs. visual fidelity tradeoff:</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Preset</th>
+<th style="text-align: left;">Target DPI</th>
+<th style="text-align: left;">JPEG Quality</th>
+<th style="text-align: left;">Subsampling</th>
+<th style="text-align: left;">Output Size</th>
+<th style="text-align: left;">Reduction</th>
+<th style="text-align: left;">Visual Quality (PSNR)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Original Baseline</strong></td>
+<td style="text-align: left;">300–440 DPI</td>
+<td style="text-align: left;">Original</td>
+<td style="text-align: left;">Original</td>
+<td style="text-align: left;"><strong>169.43 MB</strong></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">Baseline</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Native Res
+Lossless/Q88</strong></td>
+<td style="text-align: left;">100% (No downsample)</td>
+<td style="text-align: left;">Q=88</td>
+<td style="text-align: left;">4:4:4 (No chroma sub)</td>
+<td style="text-align: left;">116.08 MB</td>
+<td style="text-align: left;">-31.5%</td>
+<td style="text-align: left;">48–52 dB (Lossless)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Native Res Q85</strong></td>
+<td style="text-align: left;">100% (No downsample)</td>
+<td style="text-align: left;">Q=85</td>
+<td style="text-align: left;">4:2:0</td>
+<td style="text-align: left;">90.46 MB</td>
+<td style="text-align: left;">-46.6%</td>
+<td style="text-align: left;">44–50 dB (Near lossless)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Print-Target 300 DPI</strong></td>
+<td style="text-align: left;">Max 300 DPI</td>
+<td style="text-align: left;">Q=85</td>
+<td style="text-align: left;">4:2:0</td>
+<td style="text-align: left;">82.81 MB</td>
+<td style="text-align: left;">-51.1%</td>
+<td style="text-align: left;">42–48 dB</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>High-DPI 250 DPI</strong></td>
+<td style="text-align: left;">Max 250 DPI</td>
+<td style="text-align: left;">Q=88</td>
+<td style="text-align: left;">4:2:0</td>
+<td style="text-align: left;">71.42 MB</td>
+<td style="text-align: left;">-57.8%</td>
+<td style="text-align: left;">38–46 dB</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Retina/Tablet 200 DPI
+(Selected)</strong></td>
+<td style="text-align: left;"><strong>Max 200 DPI</strong></td>
+<td style="text-align: left;"><strong>Q=85</strong></td>
+<td style="text-align: left;"><strong>4:2:0</strong></td>
+<td style="text-align: left;"><strong>47.97 MB</strong></td>
+<td style="text-align: left;"><strong>-71.7%</strong></td>
+<td style="text-align: left;"><strong>32–44 dB (Clean)</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Compact 150 DPI</strong></td>
+<td style="text-align: left;">Max 150 DPI</td>
+<td style="text-align: left;">Q=82</td>
+<td style="text-align: left;">4:2:0</td>
+<td style="text-align: left;">31.09 MB</td>
+<td style="text-align: left;">-81.7%</td>
+<td style="text-align: left;">28–38 dB</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Ultra-Light 150 DPI</strong></td>
+<td style="text-align: left;">Max 150 DPI</td>
+<td style="text-align: left;">Q=75</td>
+<td style="text-align: left;">4:2:0</td>
+<td style="text-align: left;">27.20 MB</td>
+<td style="text-align: left;">-84.0%</td>
+<td style="text-align: left;">25–34 dB</td>
+</tr>
+</tbody>
+</table>
+<h3 id="why-the-200-dpi-q85-preset-was-chosen">Why the 200 DPI / Q85
+Preset Was Chosen</h3>
+<ul>
+<li><strong>Text &amp; Tables</strong>: Rendered directly from vector
+fonts, remaining infinitely sharp at 1000% zoom regardless of DPI.</li>
+<li><strong>Display Resolution</strong>: On standard 8.5” × 11” pages,
+200 DPI generates 1700 × 2200 pixels. This matches standard tablet
+screens 1:1 and displays flawlessly on desktop monitors.</li>
+<li><strong>Sweet Spot</strong>: Cuts file size by over 71% while
+staying well above the human visual perception threshold for compression
+artifacts (PSNR &gt; 32 dB).</li>
+</ul>
+<hr />
+<h2 id="technical-implementation">4. Technical Implementation</h2>
+<p>The optimization was implemented using a Python pipeline combining
+<code>pikepdf</code> (QPDF C++ engine), <code>pymupdf</code> (MuPDF
+engine), and <code>Pillow</code> (libjpeg-turbo):</p>
+<ol type="1">
+<li><strong>XRef-Level In-Place Updating</strong>:
+<ul>
+<li>Rather than rewriting pages sequentially (which can duplicate shared
+background images), unique indirect image XObjects were targeted
+directly by object number (<code>xref</code>).</li>
+<li>All 450+ page references to shared background textures remain linked
+to single, shared object instances.</li>
+</ul></li>
+<li><strong>Intelligent Raster Processing</strong>:
+<ul>
+<li>Continuous-tone illustrations (<code>RGB</code> / <code>CMYK</code>)
+were extracted, converted to standard <code>sRGB</code>, downsampled
+using Lanczos resampling (if <code>DPI &gt; 200</code>), and compressed
+using libjpeg-turbo with optimized Huffman tables
+(<code>Q=85</code>).</li>
+<li>Indexed palette graphics, 1-bit monochrome art, and UI icons were
+preserved as lossless <code>FlateDecode</code>.</li>
+</ul></li>
+<li><strong>Synchronized Alpha Mask (<code>SMask</code>)
+Resampling</strong>:
+<ul>
+<li>Associated transparency soft masks were resampled in exact lockstep
+to matching <code>(width, height)</code> dimensions and encoded as
+<code>Q=90</code> grayscale DCT streams, preventing edge fringing.</li>
+</ul></li>
+<li><strong>Metadata &amp; Resource Cleanup</strong>:
+<ul>
+<li>Stripped Photoshop XMP XML blocks (<code>/Metadata</code>) from
+individual image streams.</li>
+<li>Removed orphaned objects with
+<code>pdf.remove_unreferenced_resources()</code>.</li>
+</ul></li>
+<li><strong>Structural PDF 1.5+ Compression</strong>:
+<ul>
+<li>Saved with
+<code>object_stream_mode=pikepdf.ObjectStreamMode.generate</code> to
+pack dictionary objects into compressed object streams
+(<code>/ObjStm</code>).</li>
+</ul></li>
+</ol>
+<hr />
+<h2 id="verification-and-quality-assurance">5. Verification and Quality
+Assurance</h2>
+<p>The generated file underwent automated validation tests:</p>
+<ol type="1">
+<li><strong>Document Structure</strong>:
+<ul>
+<li>Page count verified: exactly 274 pages.</li>
+<li>Outline / Table of Contents tree verified: exactly 352 bookmark
+nodes preserved.</li>
+</ul></li>
+<li><strong>Text Layer Consistency</strong>:
+<ul>
+<li>Text streams across all 274 pages were extracted and compared
+against the original document. Verified 100% verbatim parity with zero
+missing words, glyphs, or characters.</li>
+</ul></li>
+<li><strong>Interactive Elements</strong>:
+<ul>
+<li>Internal links, table-of-contents hyperlinks, and page jump actions
+verified identical.</li>
+</ul></li>
+<li><strong>Visual Rendering</strong>:
+<ul>
+<li>PyMuPDF test renders across sample pages confirmed clean rendering
+with no stream syntax errors or missing visual assets.</li>
+</ul></li>
+</ol>
+<hr />
+<h2 id="generated-files">6. Generated Files</h2>
+<ul>
+<li><strong>Optimized PDF:</strong>
+<code>SDL1000_Shadow_of_the_Demon_Lord_Revised-digital_3-21-19_optimized.pdf</code>
+(47.97 MB)</li>
+<li><strong>Original PDF (Unmodified):</strong>
+<code>SDL1000_Shadow_of_the_Demon_Lord_Revised-digital_3-21-19.pdf</code>
+(169.43 MB)</li>
+<li><strong>Compression Report:</strong>
+<code>sotdl-pdf-compression-report.md</code></li>
+</ul>
+
+</body>
+</html>
